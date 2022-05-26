@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+body,html {
+    font-family: 'Roboto', sans-serif;
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todos_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todos_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin : 5px 4px;
+    padding : 5px 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todos_input input {
+    margin : 5px 4px;
+    padding : 5px 4px;
+    height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 400px;
+    min-height : 40px;
+    height: auto;
+    margin: 20px 10px;
+}
+
+.button_create , .button_delete {
+    display: flex;
+    padding: 8px 7px;
+    margin : auto;
+    border-radius : 5px;
+    outline : none;
+    border : none;
+    cursor : pointer;
+}
+
+.button_create {
+    color : whitesmoke;
+    background-color : rgba(0, 128, 0 , 0.8);
+    font-weight : bold;
+}
+
+.button_create:hover {
+    background-color : rgba(0, 128, 0 , 0.6);
+}
+
+.button_delete {
+    margin-left: 0px;
+    color : whitesmoke;
+    background-color : rgba(255, 0, 0 , 0.8);
+    font-weight : bold;
+}
+
+.button_delete:hover {
+    background-color : rgba(255, 0, 0 , 0.6);
+}
+
+.todoItems div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+}
+
+.todoItems h2 {
+    font-size: 1.2em;
+}
+
+.todoItems p {
+    margin-top: -2px;
 }

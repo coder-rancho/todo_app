@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "todoapp",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\Dell\\Desktop\\todo_app\\amplify\\backend\\api\\todoapp\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
